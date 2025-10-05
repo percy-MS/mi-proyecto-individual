@@ -16,25 +16,22 @@ HTML Semántico aplicado - Laboratorio 05
 <body>   
     <!-- HEADER: Encabezado principal semántico -->
     <header>
-        <h1>Diccionario Visual de Acordes de Mandolina</h1>
-        <p><strong>¡Bienvenido a tu guía básica para aprender acordes de mandolina!</strong> Este diccionario está diseñado especialmente para principiantes que quieren dominar los acordes fundamentales de este hermoso instrumento de cuerda. La mandolina es perfecta para tocar música folk, bluegrass, country y música clásica.</p>
+        <h1>🎵 Diccionario Visual de Acordes de Mandolina</h1>
+        <p><strong>¡Bienvenido a tu guía básica para aprender acordes de mandolina!</strong> Este diccionario está diseñado especialmente para principiantes que quieren dominar los acordes fundamentales de este hermoso instrumento de cuerda.</p>
         
-        <!-- NAV: Navegación principal interactiva -->
-        <nav>
-            <details>
-                <summary>Menú de Navegación</summary>
-                <ul>
-                    <li><a href="#que-es-la-mandolina">¿Qué es la Mandolina?</a></li>
-                    <li><a href="#acordes-basicos">Acordes Básicos</a></li>
-                    <li><a href="#consejos-principiantes">Consejos para Principiantes</a></li>
-                    <li><a href="#recursos-aprendizaje">Recursos</a></li>
-                    <li><a href="tablaturas.html">Tablaturas</a></li>
-                </ul>
-            </details>
+        <!-- NAV: Navegación principal simplificada -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#que-es-la-mandolina">¿Qué es la Mandolina?</a></li>
+                <li><a href="#acordes-basicos">Acordes Básicos</a></li>
+                <li><a href="#consejos-principiantes">Consejos</a></li>
+                <li><a href="tablaturas.html">Tablaturas</a></li>
+                <li><a href="practica.html">Registro de Práctica</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- MAIN: Contenido principal -->
     <main>
         <!-- SECTION: Información sobre la mandolina -->
         <section id="que-es-la-mandolina">
@@ -42,7 +39,14 @@ HTML Semántico aplicado - Laboratorio 05
                 <h2>¿Qué es la Mandolina?</h2>
             </header>
             
-            <p>La mandolina es un instrumento de cuerda pulsada que pertenece a la familia del laúd. Tiene 8 cuerdas agrupadas en 4 pares (cursos), afinadas como un violín: <em>G-D-A-E</em> de grave a agudo. Es más pequeña que una guitarra y produce un sonido brillante y penetrante que la hace ideal para melodías y acompañamientos.</p>
+            <p>La mandolina es un instrumento de cuerda pulsada que pertenece a la familia del laúd. Tiene <strong>8 cuerdas agrupadas en 4 pares</strong>, afinadas como un violín: <em>G-D-A-E</em> de grave a agudo. Produce un sonido brillante y penetrante ideal para melodías y acompañamientos en géneros como:</p>
+            
+            <ul>
+                <li>Folk y Country</li>
+                <li>Bluegrass</li>
+                <li>Música Clásica</li>
+                <li>Rock/Pop (R.E.M., Led Zeppelin)</li>
+            </ul>
 
             <figure>
                 <img src="https://media.istockphoto.com/id/183578932/es/foto/anticuario-mandolina.jpg?s=1024x1024&w=is&k=20&c=oVb6X5YBu2616iqUc3d201q0m_koberkb0uPCiP_n4w=" alt="Mandolina acústica tradicional" width="400" height="300">
@@ -54,16 +58,16 @@ HTML Semántico aplicado - Laboratorio 05
         <section id="acordes-basicos">
             <header>
                 <h2>Acordes Básicos para Principiantes</h2>
-                <p>Estos son los acordes más importantes que todo principiante debe aprender. Comenzaremos con acordes simples en posición abierta:</p>
+                <p>Estos son los tres acordes más importantes para empezar. Domínalos y podrás tocar cientos de canciones:</p>
             </header>
 
             <!-- ARTICLE: Do Mayor -->
             <article>
                 <header>
-                    <h3>Do Mayor (C)</h3>
+                    <h3>1. Do Mayor (C)</h3>
                 </header>
                 
-                <p>El acorde de <strong>Do Mayor</strong> es uno de los más fáciles de aprender. Se forma colocando los dedos en las cuerdas como se muestra a continuación:</p>
+                <p>El acorde de <strong>Do Mayor</strong> es uno de los más fáciles de aprender. Perfecto para comenzar.</p>
                 
                 <figure>
                     <img src="images/acorde-do-mayor.webp" alt="Diagrama del acorde Do Mayor en mandolina" width="200" height="250">
@@ -71,22 +75,28 @@ HTML Semántico aplicado - Laboratorio 05
                 </figure>
                 
                 <details>
-                    <summary>Posición de dedos detallada</summary>
-                    <ul>
-                        <li>Dedo 1: 1er traste, cuerdas G (3ª y 4ª)</li>
-                        <li>Dedo 2: 2º traste, cuerdas D (1ª y 2ª)</li>
-                        <li>Dedo 3: 3er traste, cuerdas A (1ª y 2ª)</li>
-                    </ul>
+                    <summary>👉 Ver posición de dedos detallada</summary>
+                    <dl>
+                        <dt>Dedo 1:</dt>
+                        <dd>1er traste, cuerdas G (3ª y 4ª)</dd>
+                        
+                        <dt>Dedo 2:</dt>
+                        <dd>2º traste, cuerdas D (1ª y 2ª)</dd>
+                        
+                        <dt>Dedo 3:</dt>
+                        <dd>3er traste, cuerdas A (1ª y 2ª)</dd>
+                    </dl>
+                    <p><strong>Dificultad:</strong> ⭐⭐☆☆☆ (Fácil)</p>
                 </details>
             </article>
 
             <!-- ARTICLE: Sol Mayor -->
             <article>
                 <header>
-                    <h3>Sol Mayor (G)</h3>
+                    <h3>2. Sol Mayor (G)</h3>
                 </header>
                 
-                <p>El acorde de <strong>Sol Mayor</strong> es fundamental en muchas canciones. Es un poco más complejo pero esencial:</p>
+                <p>El acorde de <strong>Sol Mayor</strong> es fundamental en bluegrass y folk. Esencial para progresiones comunes.</p>
                 
                 <figure>
                     <img src="images/acorde-sol-mayor.webp" alt="Diagrama del acorde Sol Mayor en mandolina" width="200" height="250">
@@ -94,23 +104,31 @@ HTML Semántico aplicado - Laboratorio 05
                 </figure>
                 
                 <details>
-                    <summary>Posición de dedos detallada</summary>
-                    <ul>
-                        <li>Cuerdas G: al aire (sin presionar)</li>
-                        <li>Dedo 1: 2º traste, cuerdas D</li>
-                        <li>Dedo 2: 3er traste, cuerdas A</li>
-                        <li>Dedo 3: 3er traste, cuerdas E</li>
-                    </ul>
+                    <summary>👉 Ver posición de dedos detallada</summary>
+                    <dl>
+                        <dt>Cuerdas G:</dt>
+                        <dd>Al aire (sin presionar)</dd>
+                        
+                        <dt>Dedo 1:</dt>
+                        <dd>2º traste, cuerdas D</dd>
+                        
+                        <dt>Dedo 2:</dt>
+                        <dd>3er traste, cuerdas A</dd>
+                        
+                        <dt>Dedo 3:</dt>
+                        <dd>3er traste, cuerdas E</dd>
+                    </dl>
+                    <p><strong>Dificultad:</strong> ⭐⭐☆☆☆ (Fácil)</p>
                 </details>
             </article>
 
             <!-- ARTICLE: Re Mayor -->
             <article>
                 <header>
-                    <h3>Re Mayor (D)</h3>
+                    <h3>3. Re Mayor (D)</h3>
                 </header>
                 
-                <p>El acorde de <strong>Re Mayor</strong> completa la tríada básica junto con Do y Sol:</p>
+                <p>El acorde de <strong>Re Mayor</strong> completa la tríada básica junto con Do y Sol. Con estos tres ya puedes tocar muchas canciones.</p>
                 
                 <figure>
                     <img src="images/acorde-re-mayor.webp" alt="Diagrama del acorde Re Mayor en mandolina" width="200" height="250">
@@ -118,17 +136,23 @@ HTML Semántico aplicado - Laboratorio 05
                 </figure>
                 
                 <details>
-                    <summary>Posición de dedos detallada</summary>
-                    <ul>
-                        <li>Dedo 1: 2º traste, cuerdas G</li>
-                        <li>Dedo 2: 2º traste, cuerdas E</li>
-                        <li>Cuerdas D y A: al aire</li>
-                    </ul>
+                    <summary>👉 Ver posición de dedos detallada</summary>
+                    <dl>
+                        <dt>Dedo 1:</dt>
+                        <dd>2º traste, cuerdas G</dd>
+                        
+                        <dt>Dedo 2:</dt>
+                        <dd>2º traste, cuerdas E</dd>
+                        
+                        <dt>Cuerdas D y A:</dt>
+                        <dd>Al aire (sin presionar)</dd>
+                    </dl>
+                    <p><strong>Dificultad:</strong> ⭐⭐⭐☆☆ (Intermedio)</p>
                 </details>
             </article>
         </section>
 
-        <!-- SECTION: Consejos para principiantes -->
+        <!-- SECTION: Consejos para principiantes SIMPLIFICADO -->
         <section id="consejos-principiantes">
             <header>
                 <h2>Consejos para Principiantes</h2>
@@ -136,16 +160,14 @@ HTML Semántico aplicado - Laboratorio 05
 
             <article>
                 <header>
-                    <h3>Técnica Básica</h3>
+                    <h3>🎯 Técnica Básica</h3>
                 </header>
-                <p>Para tocar correctamente la mandolina, recuerda mantener una postura adecuada. Sostén el instrumento contra tu pecho, usa una púa (plectro) para pulsar las cuerdas y presiona firmemente las cuerdas contra los trastes con la mano izquierda.</p>
-            </article>
-
-            <article>
-                <header>
-                    <h4>Rutina de Práctica Diaria</h4>
-                </header>
-                <p>Dedica al menos 15-30 minutos diarios a practicar los acordes básicos. Comienza lentamente, asegurándote de que cada cuerda suene limpiamente antes de aumentar la velocidad. La constancia es clave para desarrollar la memoria muscular.</p>
+                <ul>
+                    <li><strong>Postura:</strong> Sostén la mandolina contra tu pecho</li>
+                    <li><strong>Mano derecha:</strong> Usa una púa (plectro) para pulsar las cuerdas</li>
+                    <li><strong>Mano izquierda:</strong> Presiona firmemente las cuerdas contra los trastes</li>
+                    <li><strong>Práctica:</strong> 15-30 minutos diarios es ideal para empezar</li>
+                </ul>
 
                 <figure>
                     <img src="https://2.blogs.elcomercio.pe/operaperu/wp-content/uploads/sites/242/2016/06/9-%C2%A9-Uwe-Arens-DG-copy.jpg" alt="Persona tocando mandolina" width="350" height="250">
@@ -153,156 +175,85 @@ HTML Semántico aplicado - Laboratorio 05
                 </figure>
             </article>
 
-            <!-- Contenido organizado semánticamente -->
-            <details>
-                <summary>Guías de Práctica Organizadas</summary>
-                
-                <article>
-                    <header>
-                        <h4>5 Canciones Favoritas para Mandolina</h4>
-                    </header>
-                    <ul>
-                        <li>The Mandolin Wind - Rod Stewart</li>
-                        <li>Losing My Religion - R.E.M.</li>
-                        <li>Maggie May - Rod Stewart</li>
-                        <li>Going to California - Led Zeppelin</li>
-                        <li>Classical Gas - Mason Williams</li>
-                        <li>Huaylia Chumbivibilcana - Tradicional</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <header>
-                        <h4>Pasos para Afinar la Mandolina</h4>
-                    </header>
-                    <ol>
-                        <li>Preparar afinador o app de afinación</li>
-                        <li>Afinar primera cuerda (G)</li>
-                        <li>Afinar segunda cuerda (D)</li>
-                        <li>Afinar tercera cuerda (A)</li>
-                        <li>Afinar cuarta cuerda (E)</li>
-                        <li>Verificar afinación completa</li>
-                    </ol>
-                </article>
-
-                <article>
-                    <header>
-                        <h4>Algoritmo para Practicar Acordes Diarios</h4>
-                    </header>
-                    <ol>
-                        <li>Establecer tiempo de práctica (15-30 min)</li>
-                        <li>Mientras quede tiempo disponible:</li>
-                        <li>Si el acorde suena limpio:</li>
-                        <li>Pasar al siguiente acorde</li>
-                        <li>Si no suena bien:</li>
-                        <li>Repetir el acorde 5 veces más</li>
-                        <li>Descansar 30 segundos</li>
-                        <li>Finalizar sesión</li>
-                    </ol>
-                </article>
-            </details>
-        </section>
-
-        <!-- SECTION: Recursos de aprendizaje -->
-        <section id="recursos-aprendizaje">
-            <header>
-                <h2>Recursos para Seguir Aprendiendo</h2>
-            </header>
-
             <article>
                 <header>
-                    <h3>¿Qué hacer después?</h3>
+                    <h3>🎸 Canciones Populares para Mandolina</h3>
                 </header>
-                <p>Una vez que domines estos acordes básicos, puedes continuar tu aprendizaje con:</p>
-                
-                <details>
-                    <summary>Géneros Musicales y Recursos para Mandolina</summary>
-                    <ul>
-                        <li>Folk/Country
-                            <ul>
-                                <li>YouTube tutorials</li>
-                                <li>Songbooks tradicionales</li>
-                                <li>Apps como Ultimate Guitar</li>
-                                <li>Grabaciones de bluegrass</li>
-                            </ul>
-                        </li>
-                        <li>Clásico
-                            <ul>
-                                <li>Partituras impresas</li>
-                                <li>Método Suzuki</li>
-                                <li>Profesores especializados</li>
-                                <li>Conservatorios</li>
-                            </ul>
-                        </li>
-                        <li>Rock/Pop
-                            <ul>
-                                <li>Tabs online</li>
-                                <li>Backing tracks</li>
-                                <li>Pedales de efectos</li>
-                                <li>Amplificadores</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </details>
-
-                <ul>
-                    <li><strong>Acordes menores:</strong> Am, Em, Dm</li>
-                    <li><strong>Acordes séptima:</strong> G7, C7, D7</li>
-                    <li><strong>Progresiones de acordes:</strong> I-V-vi-IV</li>
-                    <li><strong>Técnicas de rasgueo:</strong> Diferentes patrones rítmicos</li>
-                    <li><strong>Escalas básicas:</strong> Escala de Do mayor</li>
-                </ul>
+                <ol>
+                    <li><strong>Losing My Religion</strong> - R.E.M.</li>
+                    <li><strong>The Mandolin Wind</strong> - Rod Stewart</li>
+                    <li><strong>Going to California</strong> - Led Zeppelin</li>
+                    <li><strong>Maggie May</strong> - Rod Stewart</li>
+                    <li><strong>Classical Gas</strong> - Mason Williams</li>
+                </ol>
             </article>
 
             <article>
                 <header>
-                    <h3>¡Sigue Practicando!</h3>
+                    <h3>🎼 Pasos para Afinar tu Mandolina</h3>
                 </header>
-                <p>Recuerda que aprender un instrumento requiere <em>paciencia y dedicación</em>. No te desanimes si al principio los acordes no suenan perfectos. Con práctica constante, pronto estarás tocando tus canciones favoritas en la mandolina.</p>
+                <ol>
+                    <li>Conseguir un afinador digital o app móvil</li>
+                    <li>Afinar las cuerdas G (las más graves)</li>
+                    <li>Afinar las cuerdas D</li>
+                    <li>Afinar las cuerdas A</li>
+                    <li>Afinar las cuerdas E (las más agudas)</li>
+                    <li>Verificar que ambas cuerdas de cada par estén iguales</li>
+                </ol>
+            </article>
+        </section>
+
+        <!-- SECTION: Próximos pasos -->
+        <section id="recursos-aprendizaje">
+            <header>
+                <h2>Próximos Pasos en tu Aprendizaje</h2>
+            </header>
+
+            <article>
+                <p>Una vez que domines estos tres acordes básicos (C, G, D), continúa con:</p>
+                
+                <ul>
+                    <li><strong>Acordes menores:</strong> Am, Em, Dm</li>
+                    <li><strong>Acordes séptima:</strong> G7, C7, D7</li>
+                    <li><strong>Progresiones populares:</strong> I-V-vi-IV (C-G-Am-F)</li>
+                    <li><strong>Técnicas de rasgueo:</strong> Diferentes patrones rítmicos</li>
+                    <li><strong>Escalas básicas:</strong> Escala de Do mayor</li>
+                </ul>
+
+                <p><em>Recuerda: la paciencia y práctica constante son la clave del éxito. ¡No te desanimes!</em></p>
             </article>
         </section>
     </main>
 
-    <!-- ASIDE: Enlaces relacionados -->
+    <!-- ASIDE: Enlaces útiles simplificado -->
     <aside>
-        <details>
-            <summary>Enlaces Útiles</summary>
-            <nav>
-                <ul>
-                    <li><a href="https://www.mandolincafe.com" target="_blank">Mandolin Cafe - Comunidad Internacional</a></li>
-                    <li><a href="tablaturas.html">Ver Tablaturas y Ejercicios</a></li>
-                    <li><a href="#consejos-principiantes">Ir a Consejos para Principiantes</a></li>
-                </ul>
-            </nav>
-            
-            <figure>
-                <a href="https://www.youtube.com/watch?v=EHI73EdwtQc" target="_blank">
-                    <img src="https://assets.turbologo.com/blog/es/2019/10/19133011/youtube-logo-2017.png" alt="Tutoriales en YouTube" width="120" height="80">
-                </a>
-                <figcaption>Click en la imagen para ver tutoriales en YouTube</figcaption>
-            </figure>
-        </details>
+        <h3>Enlaces Útiles</h3>
+        <nav aria-label="Enlaces externos">
+            <ul>
+                <li><a href="https://www.mandolincafe.com" target="_blank" rel="noopener">Mandolin Cafe - Comunidad Internacional</a></li>
+                <li><a href="https://www.youtube.com/results?search_query=mandolin+tutorial" target="_blank" rel="noopener">Tutoriales de Mandolina en YouTube</a></li>
+                <li><a href="tablaturas.html">Ver Tablaturas y Ejercicios</a></li>
+                <li><a href="practica.html">Registra tu Práctica Diaria</a></li>
+            </ul>
+        </nav>
     </aside>
 
     <!-- FOOTER: Pie de página -->
     <footer>
-        <details>
-            <summary>Información del Proyecto</summary>
-            <address>
-                <p><strong>Percy Molina</strong></p>
-                <p>Email: <a href="mailto:percy@ejemplo.com">percy@ejemplo.com</a></p>
-            </address>
-            
-            <p><small>Este diccionario básico de acordes es un proyecto educativo para principiantes. Continúa practicando y explorando el maravilloso mundo de la mandolina.</small></p>
-            
-            <p><time datetime="2025-09-28">&copy; 2025</time> - HTML Semántico aplicado</p>
-        </details>
+        <address>
+            <p><strong>Percy Molina Soncco</strong></p>
+            <p>Email: <a href="mailto:percy@ejemplo.com">percy@ejemplo.com</a></p>
+        </address>
         
-        <nav>
-            <a href="#que-es-mandolina">Qué es</a> |
+        <p><small>Este diccionario básico de acordes es un proyecto educativo para principiantes. Continúa practicando y explorando el maravilloso mundo de la mandolina.</small></p>
+        
+        <p><time datetime="2025-09-28">&copy; 2025</time> - Proyecto de Introducción al Desarrollo Web</p>
+        
+        <nav aria-label="Navegación del footer">
+            <a href="#que-es-la-mandolina">Qué es</a> |
             <a href="#acordes-basicos">Acordes</a> |
             <a href="#consejos-principiantes">Consejos</a> |
-            <a href="#recursos-aprendizaje">Recursos</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </footer>
 </body>

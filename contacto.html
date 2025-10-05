@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Diccionario de Mandolina</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>✉️ Contacto y Consultas</h1>
+        <p>¿Tienes preguntas sobre la mandolina? ¡Estamos aquí para ayudarte!</p>
+        
+        <!-- NAV -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">🏠 Inicio</a></li>
+                <li><a href="tablaturas.html">📊 Tablaturas</a></li>
+                <li><a href="practica.html">📝 Registro de Práctica</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section>
+            <header>
+                <h2>Formulario de Contacto</h2>
+                <p>Completa el siguiente formulario y te responderemos lo antes posible. Todas las consultas sobre acordes, técnica y aprendizaje son bienvenidas.</p>
+            </header>
+
+            <!-- FORMULARIO DE CONTACTO -->
+            <form action="procesar-contacto.php" method="post">
+                <fieldset>
+                    <legend>👤 Información Personal</legend>
+                    
+                    <p>
+                        <label for="nombre">Nombre completo: *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                    </p>
+
+                    <p>
+                        <label for="email">Correo electrónico: *</label>
+                        <input type="email" id="email" name="email" required placeholder="tu.email@ejemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono (opcional):</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9,15}" placeholder="999888777">
+                        <small>Solo números, sin espacios ni guiones</small>
+                    </p>
+
+                    <p>
+                        <label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <option value="">-- Selecciona tu país --</option>
+                            <option value="PE">Perú</option>
+                            <option value="AR">Argentina</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="MX">México</option>
+                            <option value="ES">España</option>
+                            <option value="US">Estados Unidos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>🎸 Información Musical</legend>
+                    
+                    <p>
+                        <label for="nivel">¿Cuál es tu nivel actual en la mandolina? *</label>
+                        <select id="nivel" name="nivel" required>
+                            <option value="">-- Selecciona tu nivel --</option>
+                            <option value="principiante">Principiante (0-6 meses)</option>
+                            <option value="basico">Básico (6 meses - 1 año)</option>
+                            <option value="intermedio">Intermedio (1-3 años)</option>
+                            <option value="avanzado">Avanzado (3+ años)</option>
+                            <option value="no-toco">Aún no toco, quiero empezar</option>
+                        </select>
+                    </p>
+
+                    <p>¿Qué género musical te interesa más?</p>
+                    
+                    <p>
+                        <input type="checkbox" id="genero-folk" name="generos" value="Folk">
+                        <label for="genero-folk">Folk/Country</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="genero-bluegrass" name="generos" value="Bluegrass">
+                        <label for="genero-bluegrass">Bluegrass</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="genero-clasico" name="generos" value="Clásico">
+                        <label for="genero-clasico">Música Clásica</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="genero-rock" name="generos" value="Rock">
+                        <label for="genero-rock">Rock/Pop</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="genero-jazz" name="generos" value="Jazz">
+                        <label for="genero-jazz">Jazz</label>
+                    </p>
+
+                    <p>
+                        <label for="tiempo-practica">¿Cuánto tiempo dedicas a practicar diariamente?</label>
+                        <input type="range" id="tiempo-practica" name="tiempo-practica" min="0" max="180" step="15" value="30" list="tiempo-markers">
+                        <datalist id="tiempo-markers">
+                            <option value="0" label="0 min"></option>
+                            <option value="30" label="30 min"></option>
+                            <option value="60" label="1h"></option>
+                            <option value="90" label="1.5h"></option>
+                            <option value="120" label="2h"></option>
+                            <option value="180" label="3h"></option>
+                        </datalist>
+                        <output for="tiempo-practica" id="tiempo-output">30 minutos</output>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>💬 Tu Consulta</legend>
+                    
+                    <p>
+                        <label for="tipo-consulta">Tipo de consulta: *</label>
+                        <select id="tipo-consulta" name="tipo-consulta" required>
+                            <option value="">-- Selecciona un tipo --</option>
+                            <option value="acordes">Consulta sobre acordes específicos</option>
+                            <option value="tecnica">Dudas sobre técnica</option>
+                            <option value="canciones">Recomendaciones de canciones</option>
+                            <option value="compra">Asesoría para comprar mandolina</option>
+                            <option value="mantenimiento">Mantenimiento y cuidado</option>
+                            <option value="recursos">Solicitud de recursos adicionales</option>
+                            <option value="otro">Otro tema</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Escribe tu consulta o mensaje: *</label>
+                        <textarea id="mensaje" name="mensaje" rows="8" cols="50" required placeholder="Describe tu consulta con el mayor detalle posible..." minlength="20" maxlength="1000"></textarea>
+                        <small>Mínimo 20 caracteres, máximo 1000</small>
+                    </p>
+
+                    <p>
+                        <label for="url-referencia">URL de referencia (opcional):</label>
+                        <input type="url" id="url-referencia" name="url-referencia" placeholder="https://ejemplo.com/video">
+                        <small>Si tu consulta es sobre un video, canción o recurso específico</small>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>📧 Preferencias de Respuesta</legend>
+                    
+                    <p>¿Cómo prefieres que te contactemos?</p>
+                    
+                    <p>
+                        <input type="radio" id="contacto-email" name="medio-contacto" value="email" checked>
+                        <label for="contacto-email">Por correo electrónico</label>
+                    </p>
+                    
+                    <p>
+                        <input type="radio" id="contacto-telefono" name="medio-contacto" value="telefono">
+                        <label for="contacto-telefono">Por teléfono</label>
+                    </p>
+                    
+                    <p>
+                        <input type="radio" id="contacto-cualquiera" name="medio-contacto" value="cualquiera">
+                        <label for="contacto-cualquiera">Cualquier medio está bien</label>
+                    </p>
+
+                    <p>
+                        <label for="fecha-contacto">¿Desde qué fecha te podemos contactar?</label>
+                        <input type="date" id="fecha-contacto" name="fecha-contacto">
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="si">
+                        <label for="newsletter">Sí, deseo recibir consejos y recursos sobre mandolina por email</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>✅ Confirmación</legend>
+                    
+                    <p>
+                        <input type="checkbox" id="acepto-terminos" name="acepto-terminos" required>
+                        <label for="acepto-terminos">He leído y acepto la política de privacidad *</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="confirmo-info" name="confirmo-info" required>
+                        <label for="confirmo-info">Confirmo que la información proporcionada es correcta *</label>
+                    </p>
+                </fieldset>
+
+                <!-- Botones del formulario -->
+                <p>
+                    <button type="submit">📤 Enviar Consulta</button>
+                    <button type="reset">🔄 Limpiar Formulario</button>
+                </p>
+
+                <p><small>* Campos obligatorios</small></p>
+            </form>
+        </section>
+
+        <!-- SECTION: Información adicional -->
+        <section>
+            <header>
+                <h2>📍 Otros Medios de Contacto</h2>
+            </header>
+
+            <article>
+                <h3>Información de Contacto Directo</h3>
+                <address>
+                    <p><strong>Percy Molina Soncco</strong></p>
+                    <p>📧 Email: <a href="mailto:percy@ejemplo.com">percy@ejemplo.com</a></p>
+                    <p>📱 WhatsApp: +51 999 888 777</p>
+                    <p>📍 Arequipa, Perú</p>
+                </address>
+            </article>
+
+            <article>
+                <h3>🕐 Horario de Atención</h3>
+                <p>Respondemos consultas de:</p>
+                <ul>
+                    <li><strong>Lunes a Viernes:</strong> 9:00 AM - 6:00 PM (hora de Perú)</li>
+                    <li><strong>Sábados:</strong> 10:00 AM - 2:00 PM</li>
+                    <li><strong>Domingos:</strong> Cerrado</li>
+                </ul>
+                <p><em>Tiempo de respuesta promedio: 24-48 horas</em></p>
+            </article>
+
+            <article>
+                <h3>🌐 Síguenos en Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener">📺 YouTube - Tutoriales de Mandolina</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener">📘 Facebook - Comunidad de Mandolina</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener">📸 Instagram - @mandolina_aprender</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <!-- ASIDE -->
+    <aside>
+        <h3>❓ Preguntas Frecuentes</h3>
+        <details>
+            <summary>¿Cuánto tarda la respuesta a mi consulta?</summary>
+            <p>Generalmente respondemos en 24-48 horas hábiles. En temporadas de alta demanda puede tardar hasta 72 horas.</p>
+        </details>
+
+        <details>
+            <summary>¿Ofrecen clases personalizadas?</summary>
+            <p>Actualmente este es un proyecto educativo sin fines de lucro. Pero podemos recomendar profesores en tu zona.</p>
+        </details>
+
+        <details>
+            <summary>¿Puedo sugerir contenido para el sitio?</summary>
+            <p>¡Por supuesto! Usa el formulario seleccionando "Solicitud de recursos adicionales" y cuéntanos qué te gustaría ver.</p>
+        </details>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><small>&copy; 2025 - Percy Molina Soncco - Proyecto Diccionario de Mandolina</small></p>
+        <p><small>Proyecto educativo para el curso de Introducción al Desarrollo Web</small></p>
+        
+        <nav aria-label="Navegación del footer">
+            <a href="index.html">Inicio</a> |
+            <a href="tablaturas.html">Tablaturas</a> |
+            <a href="practica.html">Práctica</a> |
+            <a href="#top">Volver arriba ⬆️</a>
+        </nav>
+    </footer>
+
+    <!-- Script simple para actualizar el output del range -->
+    <script>
+        const tiempoRange = document.getElementById('tiempo-practica');
+        const tiempoOutput = document.getElementById('tiempo-output');
+        
+        tiempoRange.addEventListener('input', function() {
+            const minutos = this.value;
+            if (minutos == 0) {
+                tiempoOutput.textContent = 'No practico actualmente';
+            } else if (minutos < 60) {
+                tiempoOutput.textContent = minutos + ' minutos';
+            } else {
+                const horas = Math.floor(minutos / 60);
+                const mins = minutos % 60;
+                if (mins === 0) {
+                    tiempoOutput.textContent = horas + (horas === 1 ? ' hora' : ' horas');
+                } else {
+                    tiempoOutput.textContent = horas + 'h ' + mins + 'min';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

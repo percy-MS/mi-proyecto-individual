@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Práctica - Diccionario de Mandolina</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>📝 Registro de Práctica Diaria</h1>
+        <p>Lleva un control de tus sesiones de práctica y mejora tu técnica</p>
+        
+        <!-- NAV -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">🏠 Inicio</a></li>
+                <li><a href="tablaturas.html">📊 Tablaturas</a></li>
+                <li><a href="contacto.html">✉️ Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section>
+            <header>
+                <h2>Registra tu Sesión de Práctica</h2>
+                <p>Completa este formulario después de cada sesión de práctica para llevar un registro de tu progreso. La constancia es la clave del éxito.</p>
+            </header>
+
+            <!-- FORMULARIO DE REGISTRO DE PRÁCTICA -->
+            <form action="procesar-practica.php" method="post">
+                <fieldset>
+                    <legend>📅 Información de la Sesión</legend>
+                    
+                    <p>
+                        <label for="fecha-practica">Fecha de práctica:</label>
+                        <input type="date" id="fecha-practica" name="fecha-practica" required>
+                    </p>
+
+                    <p>
+                        <label for="duracion">Duración de la práctica (minutos):</label>
+                        <input type="number" id="duracion" name="duracion" min="5" max="240" step="5" value="30" required>
+                        <small>Mínimo 5 minutos, máximo 4 horas</small>
+                    </p>
+
+                    <p>
+                        <label for="hora-inicio">Hora de inicio:</label>
+                        <input type="time" id="hora-inicio" name="hora-inicio">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>🎸 Acordes Practicados</legend>
+                    <p>Selecciona todos los acordes que practicaste hoy:</p>
+                    
+                    <p>
+                        <input type="checkbox" id="acorde-c" name="acordes" value="Do Mayor">
+                        <label for="acorde-c">Do Mayor (C)</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="acorde-g" name="acordes" value="Sol Mayor">
+                        <label for="acorde-g">Sol Mayor (G)</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="acorde-d" name="acordes" value="Re Mayor">
+                        <label for="acorde-d">Re Mayor (D)</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="acorde-am" name="acordes" value="La menor">
+                        <label for="acorde-am">La menor (Am)</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="acorde-em" name="acordes" value="Mi menor">
+                        <label for="acorde-em">Mi menor (Em)</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="acorde-a" name="acordes" value="La Mayor">
+                        <label for="acorde-a">La Mayor (A)</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>🎯 Ejercicios Realizados</legend>
+                    
+                    <p>
+                        <label for="tipo-ejercicio">Tipo de ejercicio principal:</label>
+                        <select id="tipo-ejercicio" name="tipo-ejercicio" required>
+                            <option value="">-- Selecciona un tipo --</option>
+                            <option value="acordes">Práctica de acordes individuales</option>
+                            <option value="progresiones">Progresiones de acordes</option>
+                            <option value="escalas">Escalas y técnica</option>
+                            <option value="canciones">Canciones completas</option>
+                            <option value="improvisacion">Improvisación</option>
+                            <option value="afinacion">Afinación y mantenimiento</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="nivel-dificultad">Nivel de dificultad de los ejercicios:</label>
+                        <input type="range" id="nivel-dificultad" name="nivel-dificultad" min="1" max="5" value="3" list="dificultad-markers">
+                        <datalist id="dific
