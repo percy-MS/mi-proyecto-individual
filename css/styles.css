@@ -1,0 +1,121 @@
+/* 1. Estilos Generales (Selector de Etiqueta) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; 
+    padding: 0;
+    background-color: #f7f7f7; /* Fondo general gris claro */
+    color: #333;
+}
+
+/* 2. Estilos para Encabezados */
+h1 {
+    color: #4CAF50; /* Verde principal */
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+h2 {
+    color: #00796B; /* Verde azulado secundario */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* 3. Contenedor principal para centrar contenido */
+main, header, footer {
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el contenido en el medio de la página */
+    padding: 0 20px;
+}
+
+/* 4. Estilos de Navegación (Modelo de Caja) */
+header nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    background-color: #263238; /* Fondo oscuro */
+    margin-bottom: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Padding para hacer el enlace más grande (Modelo de Caja) */
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+}
+
+header nav a:hover {
+    background-color: #4CAF50; /* Verde al pasar el mouse */
+}
+fieldset {
+    border: 2px solid #00796B; /* Borde verde */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Margen para separar fieldsets */
+    border-radius: 5px;
+    background-color: white;
+}
+legend {
+    font-weight: bold;
+    color: #00796B;
+    padding: 0 10px;
+}
+textarea {
+    width: 98%; /* Casi el 100% */
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Importante para que el padding no afecte el ancho total */
+}
+/* Estilo para los botones (Similar al Ej. 8) */
+form button[type="submit"] {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Borde redondeado */
+    padding: 10px 20px; /* Padding interno */
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form button[type="reset"] {
+    background-color: #FFC107; /* Fondo amarillo/naranja */
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* Estilos para Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: white;
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+    caption-side: top;
+    color: #00796B;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #4CAF50; /* Fondo verde para la cabecera */
+    color: white;
+    text-transform: uppercase;
+}
